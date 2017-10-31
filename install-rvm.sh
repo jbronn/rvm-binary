@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-installer_options=( --auto-dotfiles --path /usr/local/rvm )
+installer_options=( stable --auto-dotfiles --path /usr/local/rvm )
 
 if
   [[ -d "/vagrant/rvm-src" ]]
@@ -28,3 +28,5 @@ do
     echo "rvm-${type} missing, shared ${type} disabled" >&2
   fi
 done
+
+touch /usr/local/rvm/config/alias

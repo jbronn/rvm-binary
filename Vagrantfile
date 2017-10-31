@@ -30,6 +30,7 @@ Vagrant.configure("2") do |config|
     # vb.gui = true
   end
 
+  config.vm.provision :shell, :inline => "gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB"
   config.vm.provision :shell, :path => 'setup-vm.sh'
   config.vm.provision :shell, :path => 'install-rvm.sh'
   binaries.each do |binary|
