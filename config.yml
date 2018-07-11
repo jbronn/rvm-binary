@@ -1,6 +1,7 @@
 binaries:
-  - ruby-2.3.4
-  - ruby-2.4.2
+  - ruby-2.3.7
+  - ruby-2.4.4
+  - ruby-2.5.1
 distributions:
   centos-7: hoot/centos7-minimal
   ubuntu_14.04-64: hoot/trusty-minimal
